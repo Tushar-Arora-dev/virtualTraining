@@ -3,7 +3,7 @@ import { pricingOptions } from "../constants";
 
 const Pricing = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20" id="pricing">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
         Pricing
       </h2>
@@ -13,7 +13,7 @@ const Pricing = () => {
             <div className="p-10 border border-neutral-700 rounded-xl">
               <p className="text-4xl mb-8">
                 {option.title}
-                {option.title === "Pro" && (
+                {option.title === 'Pro' && (
                   <span className="bg-gradient-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
                     (Most Popular)
                   </span>

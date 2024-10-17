@@ -9,7 +9,13 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
-
+  const smoothScroll = function (e) {
+    e.preventDefault();
+    const targetId = e.target.getAttribute('href').substring(1);
+    console.log(targetId);
+    const targetEl = document.getElementById(targetId);
+    targetEl?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
@@ -21,7 +27,9 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.label}</a>
+                <a href={item.href} onClick={smoothScroll}>
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
