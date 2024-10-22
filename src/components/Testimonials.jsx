@@ -3,10 +3,28 @@ import { testimonials } from "../constants";
 const Testimonials = () => {
   return (
     <div className="mt-20 tracking-wide" id="testimonials">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20">
-        What People are saying
+      <h2 className="text-3xl sm:text-5xl lg:text-5xl text-start my-10 lg:my-10">
+        About Us
       </h2>
-      <div className="flex flex-wrap justify-center">
+      <p className="text-justify">
+        At VRAstra, we specialize in delivering cutting-edge Virtual Reality
+        (VR) solutions to revolutionize how businesses operate. From immersive
+        VR training modules that enhance workforce skills, to virtual tourism
+        experiences that bring the world to your doorstep, and custom automotive
+        design tools that transform car workshops — our mission is to provide
+        innovative, interactive, and impactful VR experiences. <br /> <br />
+        With a focus on innovation, customization, and collaboration, we work
+        closely with large companies to create VR solutions that are tailored to
+        their unique needs. Our expert team is passionate about pushing the
+        boundaries of what’s possible with VR technology, helping businesses
+        across industries embrace the future of digital interaction. <br />{' '}
+        <br />
+        Whether you're looking to train your employees in a risk-free virtual
+        environment, offer customers virtual tours of global destinations, or
+        let clients customize their dream car in real-time, we have the tools
+        and expertise to bring your vision to life.
+      </p>
+      {/* <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
             <div className="bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
@@ -27,7 +45,7 @@ const Testimonials = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
