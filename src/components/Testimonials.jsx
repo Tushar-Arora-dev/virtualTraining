@@ -1,4 +1,5 @@
-import { testimonials } from "../constants";
+/* eslint-disable react/no-unescaped-entities */
+// import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (

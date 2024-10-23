@@ -1,16 +1,16 @@
-import { BotMessageSquare } from "lucide-react";
+import { BotMessageSquare } from 'lucide-react';
 // import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
+import { Fingerprint } from 'lucide-react';
+import { ShieldHalf } from 'lucide-react';
 // import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { GlobeLock } from 'lucide-react';
 
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+import user1 from '../assets/profile-pictures/user1.jpg';
+import user2 from '../assets/profile-pictures/user2.jpg';
+import user3 from '../assets/profile-pictures/user3.jpg';
+import user4 from '../assets/profile-pictures/user4.jpg';
+import user5 from '../assets/profile-pictures/user5.jpg';
+import user6 from '../assets/profile-pictures/user6.jpg';
 
 export const navItems = [
   { label: 'What We do', href: '#features' },
@@ -122,6 +122,7 @@ export const checklistItems = [
 
 export const pricingOptions = [
   {
+    id: crypto.randomUUID(),
     title: 'VR Training',
     price: '$0',
     features: [
@@ -131,8 +132,15 @@ export const pricingOptions = [
       'Tailored Content',
       'Collaborative Training',
     ],
+    flippedText: ` Unlock the future of learning with our immersive VR Training programs designed to simulate
+ real-world environments. 
+Whether it's pharmaceutical processes, manufacturing, or safety protocols, our interactive
+ simulations allow your employees to learn in a risk-free yet highly engaging environment.
+ Boost productivity, reduce errors, and enhance learning retention by integrating task-based
+ scenarios and real-time feedback into your training curriculum`,
   },
   {
+    id: crypto.randomUUID(),
     title: 'VR Tourism',
     price: '$10',
     features: [
@@ -142,40 +150,48 @@ export const pricingOptions = [
       'Group Tours',
       'Interactive Exploration',
     ],
+    flippedText: `Revolutionize the way tourists explore destinations with VR Tourism. Our solutions provide fully
+ immersive, 360-degree 
+experiences of places around the globe, allowing potential visitors to preview their destination before
+ they even book a flight.`,
   },
   {
-    title: 'Virtual Automotive Customization',
+    id: crypto.randomUUID(),
+    title: 'Heavy Machinery Simulations',
     price: '$200',
     features: [
       'Real-Time Visualization',
       'Custom Design Options',
       'Improved Customer Satisfaction',
       'Multi-Angle Views',
-      'Interactive Experience',
     ],
+    flippedText: `Enhance operational safety and proficiency with our Heavy Machinery Simulations. This is perfect
+ for industries that deal 
+with complex machinery where precision and safety are paramount. Real-time feedback and
+ analytics ensure continuous learning and improvement`,
   },
 ];
 
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+  { href: '#', text: 'Getting Started' },
+  { href: '#', text: 'Documentation' },
+  { href: '#', text: 'Tutorials' },
+  { href: '#', text: 'API Reference' },
+  { href: '#', text: 'Community Forums' },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: '#', text: 'Features' },
+  { href: '#', text: 'Supported Devices' },
+  { href: '#', text: 'System Requirements' },
+  { href: '#', text: 'Downloads' },
+  { href: '#', text: 'Release Notes' },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  { href: '#', text: 'Events' },
+  { href: '#', text: 'Meetups' },
+  { href: '#', text: 'Conferences' },
+  { href: '#', text: 'Hackathons' },
+  { href: '#', text: 'Jobs' },
 ];

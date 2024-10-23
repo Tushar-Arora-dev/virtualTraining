@@ -12,7 +12,6 @@ const Navbar = () => {
   const smoothScroll = function (e) {
     e.preventDefault();
     const targetId = e.target.getAttribute('href').substring(1);
-    console.log(targetId);
     const targetEl = document.getElementById(targetId);
     targetEl?.scrollIntoView({ behavior: 'smooth' });
   };
