@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 // import { testimonials } from "../constants";
 
-const Testimonials = () => {
+const AboutUS = () => {
   return (
-    <div className="mt-20 tracking-wide" id="testimonials">
+    <div className="mt-20 tracking-wide my-20" id="aboutus">
       <h2 className="text-3xl sm:text-5xl lg:text-5xl text-start my-10 lg:my-10">
         About Us
       </h2>
@@ -51,4 +51,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default AboutUS;
